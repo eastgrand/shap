@@ -8,7 +8,7 @@ from pydantic import BaseModel
 app = FastAPI()
 
 # Load model on startup
-with open("model.pkl", "rb") as f:
+with open("model.json", "rb") as f:
     model = pickle.load(f)
 
 @app.get("/")
